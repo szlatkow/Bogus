@@ -33,7 +33,7 @@ jobs:
       - if: github.repository_owner == github.actor
         name: Cache SonarCloud packages
         id: cache_sonar_packages
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.3
         with:
           path: ~\sonar\cache
           key: ${{ runner.os }}-sonar
@@ -42,7 +42,7 @@ jobs:
       - if: github.repository_owner == github.actor
         name: Cache SonarCloud scanner
         id: cache_sonar_scanner
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.3
         with:
           path: .\.sonar\scanner
           key: ${{ runner.os }}-sonar-scanner
