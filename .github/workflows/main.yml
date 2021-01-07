@@ -6,7 +6,7 @@ jobs:
   ci:
     runs-on: windows-latest
     outputs:
-      new_version: ${{ steps.tag_generator.outputs.new_version }}
+      new_version: ${{ steps.tag_generator.outputs.new_version }} 
     steps:
       - name: Checkout repository
         id: checkout_repo
