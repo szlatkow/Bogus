@@ -18,7 +18,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
     <PackageReference Include="XunitXml.TestLogger" Version="2.1.26" />
-    <PackageReference Include="Z.ExtensionMethods.WithTwoNamespace" Version="2.0.13" />
+    <PackageReference Include="Z.ExtensionMethods.WithTwoNamespace" Version="2.1.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bogus\Bogus.csproj" />
