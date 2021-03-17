@@ -54,3 +54,12 @@ jobs:
         run: dotnet fake run Source\Builder\build.fsx target ci
         env:
           FORCE_VERSION: ${{ steps.tag_generator.outputs.new_version }}
+      - name: npm install, make test-coverage
+        run: |
+          npm install
+          make test-coverage
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
