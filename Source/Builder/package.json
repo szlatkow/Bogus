@@ -19,7 +19,7 @@
     "gulp-map": "0.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-print": "5.0.2",
-    "jsonpath": "1.0.2",
+    "jsonpath": "1.1.1",
     "lodash": "4.17.20",
     "underscore": "1.11.0",
     "vinyl": "2.2.1"
